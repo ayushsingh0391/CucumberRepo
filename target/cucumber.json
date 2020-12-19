@@ -1,0 +1,236 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-19T15:14:29.270Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2195560600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setUP.settingUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Provide search function to the userto have quick acess of the product.",
+        "description": "",
+        "id": "search-functionality-for-amazon-website;provide-search-function-to-the-userto-have-quick-acess-of-the-product.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 121086300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setUP.exiting()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1363193939,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user is already on the amazon Page",
+            "match": {
+              "location": "SearchingAmazon.the_user_is_already_on_the_amazon_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3936959382,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on search bar and type \"Desktop\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Desktop",
+                  "offset": 35
+                }
+              ],
+              "location": "SearchingAmazon.user_click_on_search_bar_and_type_something(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 281369012,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User must be shown available \"Desktop\" in inventory",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Desktop",
+                  "offset": 30
+                }
+              ],
+              "location": "SearchingAmazon.user_must_be_shown_available_something_in_inventory(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 405064,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User must not see \"Dell\"laptops",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dell",
+                  "offset": 19
+                }
+              ],
+              "location": "SearchingAmazon.user_must_not_see_somethinglaptops(String)"
+            },
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-19T15:14:37.219Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1027522515,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setUP.settingUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Provide search function to the userto have quick acess of the product.",
+        "description": "",
+        "id": "search-functionality-for-amazon-website;provide-search-function-to-the-userto-have-quick-acess-of-the-product.;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 137090174,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setUP.exiting()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2216483111,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user is already on the amazon Page",
+            "match": {
+              "location": "SearchingAmazon.the_user_is_already_on_the_amazon_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3967131024,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on search bar and type \"Mobile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mobile",
+                  "offset": 35
+                }
+              ],
+              "location": "SearchingAmazon.user_click_on_search_bar_and_type_something(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 115053337,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User must be shown available \"Mobile\" in inventory",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mobile",
+                  "offset": 30
+                }
+              ],
+              "location": "SearchingAmazon.user_must_be_shown_available_something_in_inventory(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 347798,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User must not see \"Nokia\"laptops",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nokia",
+                  "offset": 19
+                }
+              ],
+              "location": "SearchingAmazon.user_must_not_see_somethinglaptops(String)"
+            },
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Search Functionality for amazon website",
+    "description": "",
+    "id": "search-functionality-for-amazon-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/SearchFunction.feature",
+    "tags": [
+      {
+        "name": "@Search",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
